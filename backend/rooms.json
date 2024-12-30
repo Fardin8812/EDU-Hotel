@@ -1,0 +1,93 @@
+[
+  {
+    "name": "SPOT ON 37669 Hotel Radiant Blu Near OGC, New palace, Quinetown",
+    "imageurls": [
+      "https://images.app.goo.gl/EZiiWzTskBFLPZwp8",
+      "https://images.app.goo.gl/ERsd2BDPAWb63Zpp7"
+    ],
+    "rentperday": 2000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0170000000",
+    "currentbookings": [],
+    "description": "Hotel Radiant Blu is a furnished and modest property located in New Palace"
+  },
+  {
+    "name": "SPOT ON 37659 Hotel Ocean Blu Near WXY, Old palace, Kingtown",
+    "imageurls": [
+      "https://images.app.goo.gl/WTZgA1xWyJN5Vfq78",
+      "https://images.app.goo.gl/c6qRXtBsFwSReoxq6"
+    ],
+    "rentperday": 3000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0170000012",
+    "currentbookings": [],
+    "description": "Hotel Ocean Blu is a furnished and modest property located in Old Palace"
+  },
+  {
+    "name": "SPOT ON 374569 Pacific Blu Near AUB, New Road, Old York",
+    "imageurls": [
+      "https://images.app.goo.gl/NydpUD6CkzKFBKcW8",
+      "https://images.app.goo.gl/3xSCZzbYx97CSYqE8"
+    ],
+    "rentperday": 1500,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0170000040",
+    "currentbookings": [],
+    "description": "Hotel Pacific Blu is a furnished and modest property located in Old York"
+  },
+  {
+    "name": "SPOT ON 57669 Hotel Red Sea Near WER, Luminara, IvoryHeights",
+    "imageurls": [
+      "https://images.app.goo.gl/tQAMWTQQcUDuFgUB7",
+      "https://images.app.goo.gl/bmrEVjizcmY5wjqT6"
+    ],
+    "rentperday": 5000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0180000000",
+    "currentbookings": [],
+    "description": "Hotel Red Sea is a furnished and modest property located in IvoryHeights"
+  },
+  {
+    "name": "SPOT ON 67669 Hotel Moonlit Heaven Near ERT, Aetheria, Azure",
+    "imageurls": [
+      "https://images.app.goo.gl/GNZcg7eJBUpiv6Lp6",
+      "https://images.app.goo.gl/meLy6xtuxeJ2CH8E8"
+    ],
+    "rentperday": 3000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0190000000",
+    "currentbookings": [],
+    "description": "Hotel Moonlit is a furnished and modest property located in Azure"
+  },
+  {
+    "name": "SPOT ON 47669 Crystal Cascade Resort Near YUI, Vermillion, Crimsondunes",
+    "imageurls": [
+      "https://images.app.goo.gl/xAAfD7XR2LQ66jf19",
+      "https://images.app.goo.gl/BhhzhAKWLcMdy2Pt8"
+    ],
+    "rentperday": 7000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0170000000",
+    "currentbookings": [],
+    "description": "Hotel Crystal Cascade is a furnished and modest property located in Crimsondunes"
+  },
+  {
+    "name": "SPOT ON 37669 Hotel Riverstone Quarter Near PGC, Frostmore, Ecohollow",
+    "imageurls": [
+      "https://images.app.goo.gl/3HY6SfTqMXrTPWydA",
+      "https://images.app.goo.gl/tCXSUHmjV592dzJs7"
+    ],
+    "rentperday": 2000,
+    "type": "Delux",
+    "maxcount": 2,
+    "phonenumber": "0170000050",
+    "currentbookings": [],
+    "description": "Hotel Riverstone Quarter is a furnished and modest property located in Ecohollow"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "4.21.2",
+    "mongoose": "8.9.2",
+    "nodemon": "3.1.9",
+    "orzah-international": "file:",
+    "router": "^2.0.0",
+    "uglify-js": "3.19.3",
+    "web-vitals": "4.2.4",
+    "ws": "8.18.0"
+  },
+  "resolutions": {
+    "uglify-js": "3.19.7",
+    "ws": "8.18.1"
+  },
+  "name": "orzah-international",
+  "version": "1.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

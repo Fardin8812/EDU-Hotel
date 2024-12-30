@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@1.1.32
+3 info using node@v0.8.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose config file C:\Users\Asus\.npmrc
+6 verbose config file C:\Program Files\nodejs\etc\npmrc
+7 verbose config file C:\VS CODE\nvm\v0.8.0\node_modules\npm\npmrc
+8 verbose read json C:\Users\Asus\Desktop\Orzah International\package.json
+9 verbose run-script [ 'prestart', 'start', 'poststart' ]
+10 info prestart orzah-international@1.0.1
+11 info start orzah-international@1.0.1
+12 verbose unsafe-perm in lifecycle true
+13 silly exec cmd "/c" "node server.js"
+14 silly cmd,/c,node server.js,C:\Users\Asus\Desktop\Orzah International spawning
+15 info orzah-international@1.0.1 Failed to exec start script
+16 error orzah-international@1.0.1 start: `node server.js`
+16 error `cmd "/c" "node server.js"` failed with 127
+17 error Failed at the orzah-international@1.0.1 start script.
+17 error This is most likely a problem with the orzah-international package,
+17 error not with npm itself.
+17 error Tell the author that this fails on your system:
+17 error     node server.js
+17 error You can get their info via:
+17 error     npm owner ls orzah-international
+17 error There is likely additional logging output above.
+18 error System Windows_NT 6.2.9200
+19 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+20 error cwd C:\Users\Asus\Desktop\Orzah International
+21 error node -v v0.8.0
+22 error npm -v 1.1.32
+23 error code ELIFECYCLE
+24 error message orzah-international@1.0.1 start: `node server.js`
+24 error message `cmd "/c" "node server.js"` failed with 127
+25 verbose exit [ 1, true ]
