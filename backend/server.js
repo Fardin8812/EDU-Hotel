@@ -3,7 +3,6 @@ import connection from "./db.js";
 import roomsRoute from "./routes/roomsRoute.js";
 import usersroute from "./routes/usersRoute.js";
 import bookingsRoute from "./routes/bookingsRoute.js";
-import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
 

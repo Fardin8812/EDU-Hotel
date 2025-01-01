@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // MongoDB Atlas connection string (corrected)
-const mongoURL = "mongodb+srv://rafiul:rafiul123@cluster0.zcw1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURL = "mongodb+srv://rafiul:rafiul@cluster0.zcw1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Correct connection options
 mongoose.connect(mongoURL);
