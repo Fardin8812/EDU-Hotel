@@ -31,8 +31,10 @@ router.get("/bookings", async (req, res) => {
   }
 });
 
-router.delete("/delete-booking/:id", async (req, res) => {
-  const id = req.params.id;
+router.delete("/delete-booking/", async (req, res) => {
+
+  const { id } = req.body;
+
   try {
     const booking = await Booking.findById(id);
     if (!booking) {
