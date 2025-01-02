@@ -32,7 +32,7 @@ export function CheckoutPage() {
     console.log(new Date(checkIn));
     console.log(new Date(checkOut));
 
-    const response = await fetch('http://localhost:5000/api/bookings/create-booking', {
+    const response = await fetch('https://edu-hotel.onrender.com/api/bookings/create-booking', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,7 +48,9 @@ export function CheckoutPage() {
 
     if (response.ok) {
       alert('Booking created successfully');
-      navigate('/rooms');
+      navigate('/booking-confirmation', {
+        state: { room, checkIn, checkOut, totalPrice },
+      });
     }
     else {
       console.error('Failed to create booking');
@@ -69,7 +71,7 @@ export function CheckoutPage() {
           />
         </div>
         <button
-          className="lg:col-span-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          className="lg:col-span-2 bg-[maroon] hover:bg-[maroon] text-white font-bold py-2 px-4 rounded"
           onClick={handleCheckout}
           >
           Confirm Booking

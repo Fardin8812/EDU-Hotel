@@ -94,7 +94,7 @@ export function RoomDetailPage() {
 
             <button
               onClick={() => setShowBookingModal(true)}
-              className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="w-full bg-[maroon] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[maroon] transition-colors"
             >
               Book Now
             </button>

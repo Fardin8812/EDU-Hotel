@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { Calendar, Users } from 'lucide-react';
 import type { Room } from '../types';
@@ -30,17 +30,17 @@ export function RoomCard({ room, onBook }: RoomCardProps) {
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold">${room.price_per_night}</span>
+          <span className="text-2xl font-bold">৳ {room.price_per_night}</span>
           <div className="space-x-2">
             <Link
               to={`/rooms/${room.id}`}
-              className="inline-block px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-block px-4 py-2 text-[maroon] border border-[maroon] rounded-lg hover:bg-[maroon] hover:text-[white] transition-colors"
             >
               View Details
             </Link>
             <button
               onClick={() => onBook(room)}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              className="bg-[maroon] text-white px-4 py-2 rounded-lg hover:bg-[maroon] transition-colors"
             >
               Book Now
             </button>

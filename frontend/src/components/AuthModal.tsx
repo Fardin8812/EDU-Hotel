@@ -49,7 +49,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon] p-2"
               />
             </div>
             <div>
@@ -59,14 +59,14 @@ export function AuthModal({ onClose }: AuthModalProps) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon] p-2"
               />
             </div>
             <div className="pt-4">
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+                className="w-full bg-[maroon] text-white px-4 py-2 rounded-lg hover:bg-[maroon] transition-colors disabled:opacity-50"
               >
                 {loading ? 'Processing...' : (isLogin ? 'Sign In' : 'Sign Up')}
               </button>
@@ -75,7 +75,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               <button
                 type="button"
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-blue-600 hover:text-blue-700"
+                className="text-[maroon] hover:text-[maroon]"
               >
                 {isLogin ? 'Need an account? Sign up' : 'Already have an account? Sign in'}
               </button>

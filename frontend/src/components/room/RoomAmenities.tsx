@@ -9,7 +9,7 @@ interface RoomAmenity {
 
 const amenities: RoomAmenity[] = [
   {
-    icon: <Wifi size={24} />,
+    icon: <Wifi size={24}  />,
     name: 'High-Speed WiFi',
     description: 'Complimentary high-speed wireless internet'
   },
@@ -45,7 +45,7 @@ export function RoomAmenities() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {amenities.map((amenity, index) => (
         <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-          <div className="text-blue-600">{amenity.icon}</div>
+          <div className="text-[maroon]">{amenity.icon}</div>
           <div>
             <h3 className="font-semibold text-gray-900">{amenity.name}</h3>
             <p className="text-sm text-gray-600">{amenity.description}</p>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { RoomCard } from '../components/RoomCard';
 import { BookingModal } from '../components/BookingModal';
@@ -42,11 +42,33 @@ export function RoomsPage() {
       </div>
 
       {selectedRoom && (
-        <BookingModal
-          room={selectedRoom}
-          onClose={() => setSelectedRoom(null)}
-        />
+        user ? (
+          <BookingModal
+            room={selectedRoom}
+            onClose={() => setSelectedRoom(null)}
+          />
+        ) : (
+            <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50" onClick={() => setSelectedRoom(null)}>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-xl font-bold mb-4">Sign In Required</h2>
+              <p className="mb-4">Please sign in to book a room.</p>
+              <button
+              onClick={() => alert('Please sign in to book a room')}
+              className="bg-[maroon] text-white px-4 py-2 rounded-lg hover:bg-[maroon] transition-colors"
+              >
+              Sign In to Book
+              </button>
+              <button
+              onClick={() => setSelectedRoom(null)}
+              className="mt-4 ml-4 border p-2 rounded-lg border-[maroon] text-[maroon] hover:underline"
+              >
+              Close
+              </button>
+            </div>
+            </div>
+        )
       )}
+
     </div>
   );
 }

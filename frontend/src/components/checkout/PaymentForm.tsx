@@ -25,7 +25,7 @@ export function PaymentForm({ formData, onChange }: PaymentFormProps) {
               onChange={onChange}
               required
               maxLength={16}
-              className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 pl-10"
+              className="block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon] pl-10"
             />
             <CreditCard className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
           </div>
@@ -41,7 +41,7 @@ export function PaymentForm({ formData, onChange }: PaymentFormProps) {
               placeholder="MM/YY"
               required
               maxLength={5}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon]"
             />
           </div>
           <div>
@@ -53,7 +53,7 @@ export function PaymentForm({ formData, onChange }: PaymentFormProps) {
               onChange={onChange}
               required
               maxLength={3}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon]"
             />
           </div>
         </div>

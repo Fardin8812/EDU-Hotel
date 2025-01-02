@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import type { Room } from '../../types';
 
@@ -11,7 +10,6 @@ interface CheckoutFormProps {
 }
 
 export function CheckoutForm({ room, checkIn, checkOut, totalPrice }: CheckoutFormProps) {
-  const navigate = useNavigate();
   const { user } = useAuthStore();
   const [loading, setLoading] = useState(false);
 
@@ -26,7 +24,7 @@ export function CheckoutForm({ room, checkIn, checkOut, totalPrice }: CheckoutFo
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/bookings/create-booking', {
+      const response = await fetch('https://edu-hotel.onrender.com/api/bookings/create-booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,9 +42,7 @@ export function CheckoutForm({ room, checkIn, checkOut, totalPrice }: CheckoutFo
         throw new Error('Failed to create booking');
       }
 
-      navigate('/booking-confirmation', {
-        state: { room, checkIn, checkOut, totalPrice },
-      });
+      
     } catch (error) {
       console.error('Error creating booking:', error);
       alert('Failed to complete booking. Please try again.');
@@ -60,7 +56,7 @@ export function CheckoutForm({ room, checkIn, checkOut, totalPrice }: CheckoutFo
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50"
+        className="w-full bg-[maroon] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[maroon] transition-colors disabled:opacity-50"
       >
         {loading ? 'Processing...' : `Pay $${totalPrice}`}
       </button>

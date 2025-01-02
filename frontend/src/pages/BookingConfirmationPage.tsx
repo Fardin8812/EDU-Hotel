@@ -78,7 +78,7 @@ export function BookingConfirmationPage() {
         </div>
       </div>
 
-      <div className="bg-blue-50 rounded-lg p-6">
+      <div className="bg-blue-100 rounded-lg p-6">
         <h3 className="font-semibold mb-2">What's Next?</h3>
         <ul className="space-y-2 text-gray-600">
           <li>• You'll receive a confirmation email with your booking details</li>

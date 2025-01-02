@@ -14,7 +14,6 @@ export function BookingModal({ room, onClose }: BookingModalProps) {
   const navigate = useNavigate();
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
-  const [loading, setLoading] = useState(false);
   const user = useAuthStore((state) => state.user);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -56,7 +55,7 @@ export function BookingModal({ room, onClose }: BookingModalProps) {
                 onChange={(e) => setCheckIn(e.target.value)}
                 min={new Date().toISOString().split('T')[0]}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon]"
               />
             </div>
             <div>
@@ -67,16 +66,15 @@ export function BookingModal({ room, onClose }: BookingModalProps) {
                 onChange={(e) => setCheckOut(e.target.value)}
                 min={checkIn || new Date().toISOString().split('T')[0]}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[maroon] focus:ring-[maroon]"
               />
             </div>
             <div className="pt-4">
               <button
                 type="submit"
-                disabled={loading}
-                className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+                className="w-full bg-[maroon] text-white px-4 py-2 rounded-lg hover:bg-[maroon] transition-colors disabled:opacity-50"
               >
-                {loading ? 'Processing...' : 'Continue to Checkout'}
+                Continue to Checkout
               </button>
             </div>
           </div>
