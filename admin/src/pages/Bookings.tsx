@@ -9,7 +9,7 @@ export function Bookings() {
   React.useEffect(() => {
     setLoading(true);
 
-    fetch('http://localhost:5000/api/bookings/bookings')
+    fetch('https://edu-hotel.onrender.com/api/bookings/bookings')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch bookings');
@@ -29,7 +29,7 @@ export function Bookings() {
   }, []);
 
   const completeBooking = (id: string) => {
-    fetch('http://localhost:5000/api/bookings/delete-booking', {
+    fetch('https://edu-hotel.onrender.com/api/bookings/delete-booking', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
