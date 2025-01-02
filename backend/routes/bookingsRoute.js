@@ -22,4 +22,28 @@ router.post("/create-booking", async (req, res) => {
   }
 });
 
+router.get("/bookings", async (req, res) => {
+  try {
+    const bookings = await Booking.find().populate("roomId").populate("userId");
+    return res.status(200).json({ bookings });
+  } catch (error) {
+    return res.status(400).json({ message: error.message });
+  }
+});
+
+router.delete("/delete-booking/:id", async (req, res) => {
+  const id = req.params.id;
+  try {
+    const booking = await Booking.findById(id);
+    if (!booking) {
+      return res.status(404).json({ message: "Booking not found" });
+    }
+    await booking.deleteOne();
+    return res.status(200).json({ message: "Booking deleted successfully" });
+  } catch (error) {
+    return res.status(400).json({ message: error.message });
+  }
+});
+
+
 export default router;
